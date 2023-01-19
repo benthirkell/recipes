@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wait For Me</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <style>
+        :root {
+            --accent: var(--yellow)
+        }
+        button.back:hover > img.circletext{
+            filter: invert(60%) sepia(96%) saturate(488%) hue-rotate(18deg) brightness(102%) contrast(101%);
+        }
+        span{
+            color: var(--accent);
+            font-size: 132px;
+        }
+    </style>
+</head>
+<body class="song">
+    <button class="back" onclick="location.href='../index.html'">
+        <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        <img class="circletext" src="../images/pleisurecircletext.png">
+    </button>   
+
+    <button class="spotify" onclick="location.href='https://open.spotify.com/track/34EgWJJnvIA8RpUpkEKfiO?si=0ddd30d7a3d14deb'">
+        <img class="spotify" src="../images/spotify.png">
+        <!-- <i class="fa-brands fa-spotify"></i> -->
+    </button>
+    
+    <div class="song">
+        <h1>
+            wait for me<span>.</span>
+        </h1>
+
+        <img class="album" src="../images/waitforme.jpg" alt="Any Time">
+
+        <p> Ut consequat auctor vehicula. Duis eget cursus eros. Etiam sed feugiat dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer elit sem, vehicula non turpis eu, dignissim imperdiet mauris. Ut fermentum lorem vitae nisi consectetur fringilla. Donec et justo elit. Aenean et tellus a urna luctus sollicitudin. Suspendisse sit amet nisi tortor. Nullam eget hendrerit nisl, eget lacinia velit. Sed viverra lorem magna, et ultrices leo fermentum ut. Nulla accumsan mi odio.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Any Time</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <style>
+        :root {
+            --accent: var(--blue)
+        }
+        button.back:hover > img.circletext{
+            filter: invert(51%) sepia(23%) saturate(451%) hue-rotate(157deg) brightness(85%) contrast(90%);
+        }
+        span{
+            color: var(--accent);
+            font-size: 132px;
+        }
+    </style>
+</head>
+<body class="song">
+    <button class="back" onclick="location.href='../index.html'">
+        <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        <img class="circletext" src="../images/pleisurecircletext.png">
+    </button>   
+
+    <button class="spotify" onclick="location.href='https://open.spotify.com/track/34EgWJJnvIA8RpUpkEKfiO?si=0ddd30d7a3d14deb'">
+        <img class="spotify" src="../images/spotify.png">
+        <!-- <i class="fa-brands fa-spotify"></i> -->
+    </button>
+    
+    <div class="song">
+        <h1>
+            any time<span>.</span>
+        </h1>
+
+        <img class="album" src="../images/anytime.png" alt="Any Time">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper iaculis purus, quis aliquam metus blandit sed. Nullam metus velit, ullamcorper vel egestas sit amet, mollis id justo. Aliquam ultricies nisl ut nisi ornare, commodo semper urna tempus. Nam vitae condimentum justo. Aenean nibh leo, semper sed interdum in, aliquet sit amet mauris. Sed in elit metus. Aliquam condimentum, libero ut facilisis tristique, massa libero venenatis velit, et bibendum nulla tortor eget sapien.</p>
+    </div>
+</body>
+</html>

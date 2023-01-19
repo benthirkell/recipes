@@ -1,0 +1,221 @@
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+:root {
+    --blue: #5D7B8B;
+    --white: rgb(255, 255, 240);
+    /* --red: rgb(174,95,107); */
+    --red: #E9878E;
+    --yellow: rgb(200, 200,0);
+    --green: #1DB954;
+
+    --tran: cubic-bezier(.4,0,1,.6);
+}
+
+a {
+    border: 0px;
+    color: black;
+    display: block;
+    font-size: 50px;
+    padding: 2px;
+    margin: 5px;
+    margin-left:calc(11px + 100px);
+    text-transform: capitalize;
+    transition: color .2s var(--tran), box-shadow .25s var(--tran);
+}
+#a1{
+    box-shadow: inset 0 0 0 0 var(--blue);
+}
+#a2{
+    box-shadow: inset 0 0 0 0 var(--yellow);
+}
+#a3{
+    box-shadow: inset 0 0 0 0 var(--red);
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {    
+    color: rgb(255, 255, 240);
+}
+#a1:hover{
+    box-shadow: inset 229px 0 0 0 var(--blue);
+}
+#a2:hover{
+    box-shadow: inset 281px 0 0 0 var(--yellow);
+}
+#a3:hover{
+    box-shadow: inset 355px 0 0 0 var(--red);
+}
+body{
+    background-color: rgb(255, 255, 240);
+    padding-left: calc(((100vw - 960px) / 5));
+    padding-right: calc(((100vw - 960px) / 5));
+    padding-top: calc(1920px * 0.1);
+}
+div.home{
+    animation: .2s ease-out 0s 1 slideInFromLeft;
+}
+div.song{
+    animation: .2s ease-out 0s 1 slideInFromRight;
+}
+button{
+    background: rgba(0,0,0,0);
+    border-radius: 40px;
+    color: black;
+    cursor: pointer;
+    font-weight: 400;
+    height: 80px;
+    outline: none;
+    padding: 0px;
+    position: fixed;
+    transition: all .1s var(--tran);
+    width: 80px;
+}
+button.back{
+    border: 5px solid rgb(0, 0, 0);
+    font-size: 45px;
+    left: 60px;
+    top: 60px;
+    vertical-align: -25px;
+    
+    animation: 1s ease-out 0s 1 fadeIn;
+}
+button.spotify{
+    /* align-items: center; */
+    border: 5px solid rgb(0, 0, 0);
+    /* display: inline-flex; */
+    /* font-size: 55px; */
+    /* justify-content: center; */
+    left: calc(100vw - 160px);
+    top: 60px;
+    /* vertical-align: -25px; */
+}
+button:hover,button:focus{
+    border-radius: 40px;  
+    box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+button.back:hover{
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    color: var(--white);
+    font-size: 50px;
+}
+
+button.spotify:hover{
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    /* border: 5px solid var(--accent); */
+    color: var(--accent);
+    font-size: 60px;
+}
+button.spotify:hover > img.spotify{
+    height: 75px;
+    width: 75px;
+    filter: invert();
+}
+div {
+    border: 5px solid rgb(0, 0, 0);
+    max-width: calc(1920px * 0.6);
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+h1 {
+    border:0px;
+    font-family: Arial, sans-serif;
+    font-size: 150px;
+    margin:0px;
+    margin-bottom: -34px;
+    padding: 0px;
+    padding-left:100px;
+    padding-top:100px;
+    text-transform: uppercase;
+}
+h2 {
+    border: 0px;
+    color: black;
+    display: block;
+    font-size: 50px;
+    padding: 2px;
+    margin: 5px;
+    margin-left:calc(11px + 100px);
+    text-transform: capitalize;
+}
+iframe{
+    border:0px;
+    margin: 5px;
+    margin-left:calc(11px + 100px);
+    padding: 0px;
+    width: calc(3*192px);
+
+}
+img.album{
+    height: 450px;
+    width: 450px;
+    margin-left:calc(11px + 100px);
+    margin-top: 50px;
+    object-fit: cover;
+}
+img.circletext{
+    left: 40px;
+    top: 40px;
+    height: 120px;
+    width: 120px;
+    position: fixed;
+    transition: all .1s var(--tran);
+
+    animation: rotation 20s infinite linear;
+}
+img.spotify{
+    height: 70px;
+    width: 70px;
+    transition: all .1s var(--tran);
+}
+p{
+    float:right;
+    font-size: 28px;
+    margin: 0px;
+    margin-right: calc(11px + 100px);
+    margin-top: 43px;
+    text-align: justify;
+    width: 450px;    
+}

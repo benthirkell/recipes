@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
+    <title>Pleisure</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --accent: var(--green)
+        }
+        span{
+            font-size: 132px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Recipes</h1>
-    
-    <a href="recipes/lasagna.html">Lasagna</a>
+<body class="home">
+    <button class="spotify" onclick="location.href='https://open.spotify.com/artist/1MD55BYOqqgAzDD90x5hBB?si=dlCzyZszSHubipCIO-m0tQ'">
+        <img class="spotify" src="../images/spotify.png">
+        <!-- <i class="fa-brands fa-spotify"></i> -->
+    </button>
+
+    <div class="home">
+        <h1>
+            pleisure<span>.</span>
+        </h1>
+        <a id="a1" href="recipes/anytime.html">
+            any time.
+        </a>
+        <a id="a2" href="recipes/waitforme.html">
+            wait for me.
+        </a>
+        <a id="a3" href="recipes/seeyougroove.html">
+            see you groove.
+        </a>       
+    </div>    
 </body>
 </html>
